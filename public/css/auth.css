@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #5865F2;
+    --secondary-color: #111827;
+    --hover: #0B101A;
+  }
+
+.primary-button {
+    margin-inline-start: 1.5em;
+    border-radius: 5px;
+    padding: 6px 17px;
+    color: white;
+    text-transform: capitalize;
+    background-color: var(--secondary-color)
+}
+
+.primary-button:hover {
+    background-color: var(--hover);
+}
+
+.text-span {
+    color: var(--primary-color);
+}
