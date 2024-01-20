@@ -1,8 +1,9 @@
 :root {
     --primary-color: #5865F2;
     --secondary-color: #111827;
-    --hover: #0B101A;
-  }
+    --hover: #0b101a;
+    --outline: #607ec1bf;
+}
 
 .primary-button {
     margin-inline-start: 1.5em;
@@ -10,13 +11,60 @@
     padding: 6px 17px;
     color: white;
     text-transform: capitalize;
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    transition: outline 0.1s ease-in-out;
 }
 
 .primary-button:hover {
-    background-color: var(--hover);
+    outline: var(--outline) 3px solid;
+}
+
+.primary-button:focus {
+    background-color: #E8EDEB;
+    color: #4B5563;
 }
 
 .text-span {
     color: var(--primary-color);
+}
+
+.info-div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.info-content {
+    max-width: 350px;
+}
+
+.info-content > h1, .info-content > h4 {
+    display: none;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .info-div {
+        justify-content: start;
+        background-size: cover;
+        padding: 70px 50px;
+        background-image: url('/images/idk.png');
+        background-color: #E8EDEB;
+        background-blend-mode: multiply;
+        color: var(--secondary-color);
+        text-align: start;
+    }
+    .info-content > h1, .info-content > h4 {
+        display: block;
+    }
 }

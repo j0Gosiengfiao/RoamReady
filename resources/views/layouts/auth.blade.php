@@ -11,17 +11,28 @@
 
 <body>
 
-    <div class="flex h-screen">
+    <div class="main-container">
         <!-- First Div -->
-        <div class="w-2/5">
+        <div class="info-div md:w-3/5">
+            <div class="info-content">
+                <h1 class="mb-5 font-extrabold text-l lg:text-xl leading-tight transition-all duration-300 ease-in-out">
+                    Discover Unmatched Exploration with TourXperience
+                </h1>
+                <h4 class="mb-5 font-normal text-l lg:text-xl leading-tight transition-all duration-300 ease-in-out">
+                    Transformative journeys where every destination is an adventure, every itinerary a masterpiece.
+                </h4>
+                <a class="link" href={{ route('landing') }}>Explore more &rarr;</a>
+            </div>
+
+        </div>
+
+        <!-- Second Div -->
+        <div class="md:w-2/5">
             <!-- Content goes here -->
             @yield('form')
         </div>
 
-        <!-- Second Div -->
-        <div class=" bg-gray-200 w-3/5">
-            <!-- Content goes here -->
-        </div>
+
 
     </div>
 
