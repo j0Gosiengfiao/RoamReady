@@ -17,9 +17,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
+/**Route::get('/', function () {
     return view('welcome');
-})->name('landing');
+})->name('landing');**/
+
+Route::get('/', [UserController::class, 'Index'])->name('landing');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

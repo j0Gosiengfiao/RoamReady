@@ -58,7 +58,7 @@
         justify-content: start;
         background-size: cover;
         padding: 70px 50px;
-        background-image: url('/images/idk.png');
+        background-image: url('/images/login.png');
         background-color: #E8EDEB;
         background-blend-mode: multiply;
         color: var(--secondary-color);
