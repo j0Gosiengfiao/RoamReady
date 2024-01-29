@@ -18,9 +18,6 @@
                     @include('user.components.sidebar')
                 </div><!-- end off-canvas-menu -->
                 <div class="dashboard-content-wrap">
-                    <div class="dashboard-menu-toggler btn theme-btn theme-btn-sm lh-28 theme-btn-transparent mb-4 ml-3">
-                        <i class="la la-bars mr-1"></i> Dashboard Nav
-                    </div>
                     <div class="container-fluid">
                         @yield('page-content')
                         @include('user.components.footer')

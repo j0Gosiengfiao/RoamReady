@@ -5,17 +5,17 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="logo-box logo--box">
-                            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
                             <div class="user-btn-action">
-                                <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2"
+                                <div class="search-menu-toggle icon-element icon-element-sm mr-2"
                                     data-toggle="tooltip" data-placement="top" title="Search">
                                     <i class="la la-search"></i>
                                 </div>
-                                <div class="off-canvas-menu-toggle cat-menu-toggle icon-element icon-element-sm shadow-sm mr-2"
+                                <div class="off-canvas-menu-toggle cat-menu-toggle icon-element icon-element-sm mr-2"
                                     data-toggle="tooltip" data-placement="top" title="Category menu">
                                     <i class="la la-th-large"></i>
                                 </div>
-                                <div class="off-canvas-menu-toggle main-menu-toggle icon-element icon-element-sm shadow-sm"
+                                <div class="off-canvas-menu-toggle main-menu-toggle icon-element icon-element-sm"
                                     data-toggle="tooltip" data-placement="top" title="Main menu">
                                     <i class="la la-bars"></i>
                                 </div>
@@ -31,98 +31,36 @@
                             </form>
                             <div class="nav-right-button d-flex align-items-center">
                                 <div class="user-action-wrap d-flex align-items-center">
-                                    <div class="shop-cart course-cart pr-3 mr-3 border-right border-right-gray">
-                                        <ul>
-                                            <li>
-                                                <p class="shop-cart-btn d-flex align-items-center fs-16">
-                                                    My Courses
-                                                    <span class="la la-angle-down fs-13 ml-1"></span>
-                                                </p>
-                                                <ul class="cart-dropdown-menu after-none">
-                                                    <li class="media media-card">
-                                                        <a href="lesson-details.html" class="media-img">
-                                                            <img class="mr-3" src="images/small-img-3.jpg"
-                                                                alt="Course thumbnail image">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <h5><a href="lesson-details.html">The Complete JavaScript
-                                                                    Course 2021: From Zero to Expert!</a></h5>
-                                                            <div class="skillbar-box pt-3">
-                                                                <div class="skillbar skillbar-skillbar"
-                                                                    data-percent="36%">
-                                                                    <div class="skillbar-bar skillbar--bar bg-1"></div>
-                                                                </div><!-- End Skill Bar -->
-                                                            </div><!-- End skillbar-box -->
-                                                        </div>
-                                                    </li>
-                                                    <li class="media media-card">
-                                                        <a href="lesson-details.html" class="media-img">
-                                                            <img class="mr-3" src="images/small-img-4.jpg"
-                                                                alt="Course thumbnail image">
-                                                        </a>
-                                                        <div class="media-body">
-                                                            <h5><a href="lesson-details.html">The Complete JavaScript
-                                                                    Course 2021: From Zero to Expert!</a></h5>
-                                                            <div class="skillbar-box pt-3">
-                                                                <div class="skillbar skillbar-skillbar"
-                                                                    data-percent="77%">
-                                                                    <div class="skillbar-bar skillbar--bar bg-1"></div>
-                                                                </div><!-- End Skill Bar -->
-                                                            </div><!-- End skillbar-box -->
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a href="my-courses.html" class="btn theme-btn w-100">Got to my
-                                                            course <i class="la la-arrow-right icon ml-1"></i></a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div><!-- end course-cart -->
                                     <div class="shop-cart pr-3 mr-3 border-right border-right-gray">
                                         <ul>
                                             <li>
                                                 <p class="shop-cart-btn d-flex align-items-center">
-                                                    <i class="la la-shopping-cart fs-22"></i>
+                                                    <i class="la la-sticky-note fs-22"></i>
                                                     <span class="dot-status bg-1"></span>
                                                 </p>
                                                 <ul class="cart-dropdown-menu after-none">
                                                     <li class="media media-card">
-                                                        <a href="shopping-cart.html" class="media-img">
-                                                            <img class="mr-3" src="images/small-img.jpg"
-                                                                alt="Cart image">
-                                                        </a>
                                                         <div class="media-body">
-                                                            <h5><a href="shopping-cart.html">The Complete JavaScript
-                                                                    Course 2021: From Zero to Expert!</a></h5>
-                                                            <span class="d-block lh-18 py-1">Kamran Ahmed</span>
+                                                            <h5><a href="shopping-cart.html">This is itinerary no. 1</a></h5>
+                                                            <span class="d-block lh-18 py-1">**Additional information about the itinerary</span>
                                                             <p class="text-black font-weight-semi-bold lh-18">$12.99
-                                                                <span class="before-price fs-14">$129.99</span></p>
                                                         </div>
                                                     </li>
                                                     <li class="media media-card">
-                                                        <a href="shopping-cart.html" class="media-img">
-                                                            <img class="mr-3" src="images/small-img.jpg"
-                                                                alt="Cart image">
-                                                        </a>
                                                         <div class="media-body">
-                                                            <h5><a href="shopping-cart.html">The Complete JavaScript
-                                                                    Course 2021: From Zero to Expert!</a></h5>
-                                                            <span class="d-block lh-18 py-1">Kamran Ahmed</span>
+                                                            <h5><a href="shopping-cart.html">This is itinerary no. 1</a></h5>
+                                                            <span class="d-block lh-18 py-1">**Additional information about the itinerary</span>
                                                             <p class="text-black font-weight-semi-bold lh-18">$12.99
-                                                                <span class="before-price fs-14">$129.99</span></p>
                                                         </div>
                                                     </li>
                                                     <li class="media media-card">
                                                         <div class="media-body fs-16">
                                                             <p class="text-black font-weight-semi-bold lh-18">Total:
-                                                                <span class="cart-total">$12.99</span> <span
-                                                                    class="before-price fs-14">$129.99</span></p>
+                                                                <span class="cart-total">Insert total price here</span>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <a href="shopping-cart.html" class="btn theme-btn w-100">Got
-                                                            to cart <i class="la la-arrow-right icon ml-1"></i></a>
+                                                        <a href="shopping-cart.html" class="btn theme-btn w-100">Go to my intineraries<i class="la la-arrow-right icon ml-1"></i></a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -132,7 +70,7 @@
                                         <ul>
                                             <li>
                                                 <p class="shop-cart-btn">
-                                                    <i class="la la-heart-o"></i>
+                                                    <i class="la la-bookmark"></i>
                                                     <span class="dot-status bg-1"></span>
                                                 </p>
                                                 <ul class="cart-dropdown-menu after-none">
@@ -140,45 +78,38 @@
                                                         <div class="media media-card">
                                                             <a href="course-details.html" class="media-img">
                                                                 <img class="mr-3" src="images/small-img.jpg"
-                                                                    alt="Cart image">
+                                                                    alt="">
                                                             </a>
                                                             <div class="media-body">
-                                                                <h5><a href="course-details.html">The Complete
-                                                                        JavaScript Course 2021: From Zero to Expert!</a>
+                                                                <h5><a href="course-details.html">Bookmarked activity no.1</a>
                                                                 </h5>
-                                                                <span class="d-block lh-18 py-1">Kamran Ahmed</span>
+                                                                <span class="d-block lh-18 py-1">Insert location/category here</span>
                                                                 <p class="text-black font-weight-semi-bold lh-18">
                                                                     $12.99 <span
-                                                                        class="before-price fs-14">$129.99</span></p>
+                                                                        class="before-price fs-14">Price here</span></p>
                                                             </div>
                                                         </div>
-                                                        <a href="#"
-                                                            class="btn theme-btn theme-btn-sm theme-btn-transparent lh-28 w-100 mt-3">Add
-                                                            to cart <i class="la la-arrow-right icon ml-1"></i></a>
+                                                        
                                                     </li>
                                                     <li>
                                                         <div class="media media-card">
                                                             <a href="course-details.html" class="media-img">
                                                                 <img class="mr-3" src="images/small-img.jpg"
-                                                                    alt="Cart image">
+                                                                    alt="">
                                                             </a>
                                                             <div class="media-body">
-                                                                <h5><a href="course-details.html">The Complete
-                                                                        JavaScript Course 2021: From Zero to Expert!</a>
+                                                                <h5><a href="course-details.html">Bookmarked activity no.1</a>
                                                                 </h5>
-                                                                <span class="d-block lh-18 py-1">Kamran Ahmed</span>
+                                                                <span class="d-block lh-18 py-1">Insert location/category here</span>
                                                                 <p class="text-black font-weight-semi-bold lh-18">
                                                                     $12.99 <span
-                                                                        class="before-price fs-14">$129.99</span></p>
+                                                                        class="before-price fs-14">Price here</span></p>
                                                             </div>
                                                         </div>
-                                                        <a href="#"
-                                                            class="btn theme-btn theme-btn-sm theme-btn-transparent lh-28 w-100 mt-3">Add
-                                                            to cart <i class="la la-arrow-right icon ml-1"></i></a>
+                                                        
                                                     </li>
                                                     <li>
-                                                        <a href="my-courses.html" class="btn theme-btn w-100">Got to
-                                                            wishlist <i class="la la-arrow-right icon ml-1"></i></a>
+                                                        <a href="my-courses.html" class="btn theme-btn w-100">Go to my bookmarked<i class="la la-arrow-right icon ml-1"></i></a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -207,7 +138,7 @@
                                                                     <i class="la la-bolt"></i>
                                                                 </div>
                                                                 <div class="media-body">
-                                                                    <h5>Your resume updated!</h5>
+                                                                    <h5>Your itinerary got approved!</h5>
                                                                     <span class="d-block lh-18 pt-1 text-gray fs-13">1
                                                                         hour ago</span>
                                                                 </div>
@@ -220,19 +151,6 @@
                                                                 </div>
                                                                 <div class="media-body">
                                                                     <h5>You changed password</h5>
-                                                                    <span
-                                                                        class="d-block lh-18 pt-1 text-gray fs-13">November
-                                                                        12, 2019</span>
-                                                                </div>
-                                                            </a>
-                                                            <a href="dashboard.html"
-                                                                class="media media-card align-items-center">
-                                                                <div
-                                                                    class="icon-element icon-element-sm flex-shrink-0 bg-3 mr-3 text-white">
-                                                                    <i class="la la-user"></i>
-                                                                </div>
-                                                                <div class="media-body">
-                                                                    <h5>Your account has been created successfully</h5>
                                                                     <span
                                                                         class="d-block lh-18 pt-1 text-gray fs-13">November
                                                                         12, 2019</span>
@@ -255,7 +173,7 @@
                                                 <div class="shop-cart-btn">
                                                     <div class="avatar-xs">
                                                         <img class="rounded-full img-fluid"
-                                                            src="images/small-avatar-1.jpg" alt="Avatar image">
+                                                            src="images/small-avatar-1.jpg" alt="A">
                                                     </div>
                                                     <span class="dot-status bg-1"></span>
                                                 </div>
@@ -265,106 +183,23 @@
                                                         <a href="teacher-detail.html"
                                                             class="avatar-sm flex-shrink-0 d-block">
                                                             <img class="rounded-full img-fluid"
-                                                                src="images/small-avatar-1.jpg" alt="Avatar image">
+                                                                src="images/small-avatar-1.jpg" alt="">
                                                         </a>
                                                         <div class="ml-2">
-                                                            <h4><a href="teacher-detail.html" class="text-black">Alex
-                                                                    Smith</a></h4>
+                                                            <h4><a href="teacher-detail.html" class="text-black">Name of User</a></h4>
                                                             <span
-                                                                class="d-block fs-14 lh-20">alexsmith@example.com</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div
-                                                            class="theme-picker d-flex align-items-center justify-content-center lh-40">
-                                                            <button
-                                                                class="theme-picker-btn dark-mode-btn w-100 font-weight-semi-bold justify-content-center"
-                                                                title="Dark mode">
-                                                                <svg class="mr-1" viewBox="0 0 24 24"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round">
-                                                                    <path
-                                                                        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z">
-                                                                    </path>
-                                                                </svg>
-                                                                Dark Mode
-                                                            </button>
-                                                            <button
-                                                                class="theme-picker-btn light-mode-btn w-100 font-weight-semi-bold justify-content-center"
-                                                                title="Light mode">
-                                                                <svg class="mr-1" viewBox="0 0 24 24"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round">
-                                                                    <circle cx="12" cy="12" r="5">
-                                                                    </circle>
-                                                                    <line x1="12" y1="1"
-                                                                        x2="12" y2="3"></line>
-                                                                    <line x1="12" y1="21"
-                                                                        x2="12" y2="23"></line>
-                                                                    <line x1="4.22" y1="4.22"
-                                                                        x2="5.64" y2="5.64"></line>
-                                                                    <line x1="18.36" y1="18.36"
-                                                                        x2="19.78" y2="19.78"></line>
-                                                                    <line x1="1" y1="12"
-                                                                        x2="3" y2="12"></line>
-                                                                    <line x1="21" y1="12"
-                                                                        x2="23" y2="12"></line>
-                                                                    <line x1="4.22" y1="19.78"
-                                                                        x2="5.64" y2="18.36"></line>
-                                                                    <line x1="18.36" y1="5.64"
-                                                                        x2="19.78" y2="4.22"></line>
-                                                                </svg>
-                                                                Light Mode
-                                                            </button>
+                                                                class="d-block fs-14 lh-20">useremail@example.com</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <ul class="generic-list-item">
-                                                            <li>
-                                                                <a href="my-courses.html">
-                                                                    <i class="la la-file-video-o mr-1"></i> My courses
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shopping-cart.html">
-                                                                    <i class="la la-shopping-basket mr-1"></i> My cart
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="my-courses.html">
-                                                                    <i class="la la-heart-o mr-1"></i> My wishlist
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <div class="section-block"></div>
-                                                            </li>
-                                                            <li>
-                                                                <a href="dashboard.html">
-                                                                    <i class="la la-bell mr-1"></i> Notifications
-                                                                    <span
-                                                                        class="badge bg-info text-white ml-2 p-1">9+</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="dashboard-message.html">
-                                                                    <i class="la la-envelope mr-1"></i> Messages
-                                                                    <span
-                                                                        class="badge bg-info text-white ml-2 p-1">12+</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <div class="section-block"></div>
-                                                            </li>
+                                                            
                                                             <li>
                                                                 <a href="dashboard-settings.html">
                                                                     <i class="la la-gear mr-1"></i> Settings
                                                                 </a>
                                                             </li>
-                                                            <li>
-                                                                <a href="dashboard-purchase-history.html">
-                                                                    <i class="la la-history mr-1"></i> Purchase history
-                                                                </a>
-                                                            </li>
+                                                            
                                                             <li>
                                                                 <div class="section-block"></div>
                                                             </li>
@@ -382,11 +217,6 @@
                                                                 <div class="section-block"></div>
                                                             </li>
                                                             <li>
-                                                                <a href="#">
-                                                                    <i class="la la-question mr-1"></i> Help
-                                                                </a>
-                                                            </li>
-                                                            <li>
                                                                 <a href="index.html">
                                                                     <i class="la la-power-off mr-1"></i> Logout
                                                                 </a>
@@ -394,19 +224,7 @@
                                                             <li>
                                                                 <div class="section-block"></div>
                                                             </li>
-                                                            <li>
-                                                                <a href="#" class="position-relative">
-                                                                    <span
-                                                                        class="fs-17 font-weight-semi-bold d-block">Aduca
-                                                                        for Business</span>
-                                                                    <span class="lh-20 d-block fs-14 text-gray">Bring
-                                                                        learning to your company</span>
-                                                                    <span
-                                                                        class="position-absolute top-0 right-0 mt-3 mr-3 fs-18 text-gray">
-                                                                        <i class="la la-external-link"></i>
-                                                                    </span>
-                                                                </a>
-                                                            </li>
+                                                            
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -426,16 +244,21 @@
             data-toggle="tooltip" data-placement="left" title="Close menu">
             <i class="la la-times"></i>
         </div><!-- end off-canvas-menu-close -->
-        <h4 class="off-canvas-menu-heading pt-90px">Alerts</h4>
+        <h4 class="off-canvas-menu-heading pt-90px">Travel</h4>
+        <ul class="generic-list-item off-canvas-menu-list pt-1 pb-2 border-bottom border-bottom-gray">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="dashboard.html">My Itineraries</a></li>
+            <li><a href="dashboard.html">Bookmarked Activities</a></li>
+            <li><a href="dashboard.html">Previous</a></li>
+        </ul>
+        <h4 class="off-canvas-menu-heading pt-20px">Alerts</h4>
         <ul class="generic-list-item off-canvas-menu-list pt-1 pb-2 border-bottom border-bottom-gray">
             <li><a href="dashboard.html">Notifications</a></li>
-            <li><a href="dashboard-message.html">Messages</a></li>
-            <li><a href="my-courses.html">Wishlist</a></li>
-            <li><a href="shopping-cart.html">My cart</a></li>
         </ul>
         <h4 class="off-canvas-menu-heading pt-20px">Account</h4>
         <ul class="generic-list-item off-canvas-menu-list pt-1 pb-2 border-bottom border-bottom-gray">
             <li><a href="dashboard-settings.html">Account settings</a></li>
+            <li><a href="dashboard-settings.html">Delete Account</a></li>
             <li><a href="dashboard-purchase-history.html">Purchase history</a></li>
         </ul>
         <h4 class="off-canvas-menu-heading pt-20px">Profile</h4>
@@ -444,41 +267,6 @@
             <li><a href="dashboard-settings.html">Edit profile</a></li>
             <li><a href="index.html">Log out</a></li>
         </ul>
-        <h4 class="off-canvas-menu-heading pt-20px">More from Aduca</h4>
-        <ul class="generic-list-item off-canvas-menu-list pt-1">
-            <li><a href="for-business.html">Aduca for Business</a></li>
-            <li><a href="#">Get the app</a></li>
-            <li><a href="invite.html">Invite friends</a></li>
-            <li><a href="contact.html">Help</a></li>
-        </ul>
-        <div class="theme-picker d-flex align-items-center justify-content-center mt-4 px-3">
-            <button
-                class="theme-picker-btn dark-mode-btn btn theme-btn-sm theme-btn-white w-100 font-weight-semi-bold justify-content-center"
-                title="Dark mode">
-                <svg class="mr-1" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-                Dark Mode
-            </button>
-            <button
-                class="theme-picker-btn light-mode-btn btn theme-btn-sm theme-btn-white w-100 font-weight-semi-bold justify-content-center"
-                title="Light mode">
-                <svg class="mr-1" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                Light Mode
-            </button>
-        </div>
     </div><!-- end off-canvas-menu -->
     <div class="off-canvas-menu custom-scrollbar-styled category-off-canvas-menu">
         <div class="off-canvas-menu-close cat-menu-close icon-element icon-element-sm shadow-sm" data-toggle="tooltip"

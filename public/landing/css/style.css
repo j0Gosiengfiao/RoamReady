@@ -507,7 +507,7 @@ body {
 }
 
 .bg-4 {
-  background-color: #358FF7 !important;
+  background-color: var(--primary-color) !important;
 }
 
 .bg-5 {
@@ -558,7 +558,7 @@ body {
 }
 
 .text-color-4 {
-  color: #358FF7 !important;
+  color: var(--primary-color) !important;
 }
 
 .text-color-5 {
@@ -594,7 +594,7 @@ body {
 }
 
 .svg-icon-color-3 path {
-  fill: #358FF7;
+  fill: var(--primary-color);
 }
 
 .svg-icon-color-4 path {
@@ -1608,7 +1608,7 @@ body {
 
 .ribbon-blue-bg {
   background: rgba(53, 143, 247, 0.1) !important;
-  color: #358FF7 !important;
+  color: var(--primary-color) !important;
 }
 
 /*===== tooltip-inner =====*/
@@ -2037,7 +2037,7 @@ body {
 }
 
 .social-icons-styled li a.linkedin-bg {
-  background-color: #358FF7;
+  background-color: var(--primary-color);
 }
 
 .social-icons-styled li a.youtube-bg {
@@ -2627,9 +2627,7 @@ div.datedropper .picker .pick-lg-b li {
   -moz-border-radius: 100%;
   border-radius: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 40px rgba(14, 16, 48, 0.07);
-  -moz-box-shadow: 0 0 40px rgba(14, 16, 48, 0.07);
-  box-shadow: 0 0 40px rgba(14, 16, 48, 0.07);
+  
   text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2914,7 +2912,7 @@ div.datedropper .picker .pick-lg-b li {
 }
 
 .info--box-2.border-blue::after {
-  background-color: #358FF7;
+  background-color: var(--primary-color);
 }
 
 .info--box-2:hover::after {
@@ -6389,7 +6387,7 @@ div.datedropper .picker .pick-lg-b li {
 }
 
 .course-badge.blue {
-  background-color: #358FF7;
+  background-color: var(--primary-color);
 }
 
 .course-badge.green {
@@ -7027,12 +7025,13 @@ div.datedropper .picker .pick-lg-b li {
   .search-menu-toggle,
   .off-canvas-menu-toggle {
     display: inline-block;
+    color: var(--primary-color);
   }
 }
 
 .search-menu-toggle:hover,
 .off-canvas-menu-toggle:hover {
-  color: var(--primary-color);
+  color: var(--primary-hover);
 }
 
 /*====== sub-nav-toggler =======*/
@@ -7634,7 +7633,7 @@ div.datedropper .picker .pick-lg-b li {
   padding-right: 20px;
   padding-left: 20px;
   font-size: 14px;
-  color: #4B5563;
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -7748,21 +7747,21 @@ div.datedropper .picker .pick-lg-b li {
 }
 
 .off--canvas-menu-list li a:hover {
-  color: #358FF7;
+  color: var(--primary-color);
 }
 
 .off--canvas-menu-list li a:hover svg {
-  fill: #358FF7;
+  fill: var(--primary-color);
 }
 
 .off--canvas-menu-list li.page-active svg {
-  fill: #358FF7;
+  fill: var(--primary-color);
 }
 
 .off--canvas-menu-list li.page-active a {
   background-color: rgba(53, 143, 227, 0.04);
-  color: #358FF7;
-  border-right-color: #358FF7;
+  color: var(--primary-color);
+  border-right-color: var(--primary-color);
 }
 
 .mobile-search-form {
@@ -8086,7 +8085,7 @@ div.datedropper .picker .pick-lg-b li {
 }
 
 .message-sent .message-body {
-  background-color: #358FF7;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -8104,7 +8103,7 @@ div.datedropper .picker .pick-lg-b li {
 }
 
 .message-sent .message-body::after {
-  background-color: #358FF7;
+  background-color: var(--primary-color);
 }
 
 .message-sent .avatar-sm {
@@ -10247,7 +10246,7 @@ div.datedropper .picker .pick-lg-b li {
 }
 
 .dark-theme .off--canvas-menu-list li.page-active svg {
-  fill: #358FF7;
+  fill: var(--primary-color);
 }
 
 .dark-theme img {

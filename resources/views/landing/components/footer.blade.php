@@ -58,7 +58,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <p class="copy-desc">&copy; 2024 Qnect. All Rights Reserved. <a
-                            href="https://techydevs.com/">Joanne Gosiengfiao | Ertie Abana</a></p>
+                            href="https://jo-gosiengfiao.vercel.app/">Joanne Gosiengfiao | Ertie Abana</a></p>
                 </div><!-- end col-lg-6 -->
             </div><!-- end row -->
         </div><!-- end container -->
