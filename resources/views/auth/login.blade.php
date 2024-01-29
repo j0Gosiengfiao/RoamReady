@@ -4,13 +4,15 @@
 
 @section('form')
     <x-guest-layout>
-        <h1 class="mb-10 text-4xl md:text-3xl lg:text-4xl leading-tight font-bold transition-all duration-300 ease-in-out">Explore <span class="text-span">New<br/> Places</span> </h1>
+        <h1 class="mb-10 text-4xl md:text-3xl lg:text-4xl leading-tight font-bold transition-all duration-300 ease-in-out">
+            Explore <span class="text-span">New<br /> Places</span> </h1>
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
         <!-- Display Flash Message -->
-        @if(session('message'))
-            <div class="alert alert-{{ session('alert-type') }}">
+        <!-- add design -->
+        @if (session('message'))
+            <div class="alert alert-{{ session('alert-type') }} ">
                 {{ session('message') }}
             </div>
         @endif

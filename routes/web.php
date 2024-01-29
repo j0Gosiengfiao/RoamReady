@@ -24,7 +24,7 @@ use App\Http\Controllers\UserController;
 Route::get('/', [UserController::class, 'Index'])->name('landing');
 
 /**Route::get('/dashboard', function () {
-    return view('user.index');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');**/
 
 Route::middleware('auth')->group(function () {

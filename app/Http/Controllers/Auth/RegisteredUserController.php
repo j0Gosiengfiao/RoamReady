@@ -53,7 +53,7 @@ class RegisteredUserController extends Controller
         //return redirect(RouteServiceProvider::HOME);
 
         $notification = array(
-            'message' => 'Account created successfully!',
+            'message' => 'Account created successfully! Login to start planning.',
             'alert-type' => 'success'
         );
 

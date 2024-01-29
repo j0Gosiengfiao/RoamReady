@@ -5,6 +5,7 @@
 @section('form')
     <x-guest-layout>
         <h1 class="mb-10 text-5xl leading-tight font-bold">Arrange <span class="text-span">Your Journey</span> </h1>
+        
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
