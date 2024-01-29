@@ -33,6 +33,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// User Group Middleware
+Route::middleware(['roles:user', 'auth'])->group(function () {
+    Route::get('/user/dashboard', [UserController::class, 'UserDashboard'])
+    ->name('user.dashboard');
+});
+
 // Admin Group Middleware 
 
 Route::middleware(['roles:admin', 'auth'])->group(function () {

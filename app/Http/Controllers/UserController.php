@@ -9,4 +9,8 @@ class UserController extends Controller
     public function Index() {
         return view('landing.index');
     }
+
+    public function UserDashboard() {
+        return view('user.index');
+    }
 }
