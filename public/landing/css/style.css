@@ -379,6 +379,10 @@ body {
   font-weight: 500;
 }
 
+.admin-icon {
+  margin-right: 15px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

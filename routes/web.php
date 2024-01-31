@@ -3,7 +3,6 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -21,7 +20,7 @@ use App\Http\Controllers\UserController;
     return view('welcome');
 })->name('landing');**/
 
-Route::get('/', [UserController::class, 'Index'])->name('landing');
+Route::get('/', [UserController::class, 'Landing'])->name('landing');
 
 /**Route::get('/dashboard', function () {
     return view('dashboard');
@@ -35,8 +34,10 @@ Route::middleware('auth')->group(function () {
 
 // User Group Middleware
 Route::middleware(['roles:user', 'auth'])->group(function () {
-    Route::get('/user/dashboard', [UserController::class, 'UserDashboard'])
-    ->name('user.dashboard');
+    Route::get('/user/explore', [UserController::class, 'UserIndex'])
+    ->name('user.index');
+    Route::get('/user/logout', [UserController::class, 'UserLogout'])
+    ->name('user.logout');
 });
 
 // Admin Group Middleware 

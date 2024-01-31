@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ asset('landing/css/fancybox.css') }}">
     <link rel="stylesheet" href="{{ asset('landing/css/tooltipster.bundle.css') }}">
     <link rel="stylesheet" href="{{ asset('landing/css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- end inject -->
 </head>
 

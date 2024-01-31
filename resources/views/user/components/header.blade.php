@@ -173,7 +173,7 @@
                                                 <div class="shop-cart-btn">
                                                     <div class="avatar-xs">
                                                         <img class="rounded-full img-fluid"
-                                                            src="images/small-avatar-1.jpg" alt="A">
+                                                            src="{{ asset('/landing/images/small-avatar-1.jpg') }}" alt="A">
                                                     </div>
                                                     <span class="dot-status bg-1"></span>
                                                 </div>
@@ -183,7 +183,7 @@
                                                         <a href="teacher-detail.html"
                                                             class="avatar-sm flex-shrink-0 d-block">
                                                             <img class="rounded-full img-fluid"
-                                                                src="images/small-avatar-1.jpg" alt="">
+                                                                src="{{ asset('landing/images/small-avatar-1.jpg') }}" alt="">
                                                         </a>
                                                         <div class="ml-2">
                                                             <h4><a href="teacher-detail.html" class="text-black">Name of User</a></h4>
@@ -194,15 +194,6 @@
                                                     <li>
                                                         <ul class="generic-list-item">
                                                             
-                                                            <li>
-                                                                <a href="dashboard-settings.html">
-                                                                    <i class="la la-gear mr-1"></i> Settings
-                                                                </a>
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <div class="section-block"></div>
-                                                            </li>
                                                             <li>
                                                                 <a href="student-detail.html">
                                                                     <i class="la la-user mr-1"></i> Public profile
@@ -217,7 +208,7 @@
                                                                 <div class="section-block"></div>
                                                             </li>
                                                             <li>
-                                                                <a href="index.html">
+                                                                <a href={{ route('user.logout') }}>
                                                                     <i class="la la-power-off mr-1"></i> Logout
                                                                 </a>
                                                             </li>
@@ -246,7 +237,7 @@
         </div><!-- end off-canvas-menu-close -->
         <h4 class="off-canvas-menu-heading pt-90px">Travel</h4>
         <ul class="generic-list-item off-canvas-menu-list pt-1 pb-2 border-bottom border-bottom-gray">
-            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="dashboard.html">Explore</a></li>
             <li><a href="dashboard.html">My Itineraries</a></li>
             <li><a href="dashboard.html">Bookmarked Activities</a></li>
             <li><a href="dashboard.html">Previous</a></li>
