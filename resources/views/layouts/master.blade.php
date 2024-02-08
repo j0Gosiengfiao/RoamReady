@@ -15,7 +15,7 @@
         rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" sizes="16x16" href="{{ asset('landing/images/favicon.png') }}">
+    
 
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset('landing/css/bootstrap.min.css') }}">
