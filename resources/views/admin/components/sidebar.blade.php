@@ -9,7 +9,7 @@
     <!--navigation-->
     <ul class="metismenu" id="menu">
         <li>
-            <a href="javascript:;" class="">
+            <a href="{{ route('admin.dashboard') }}" class="">
                 <div class="parent-icon"><i class='bx bx-home-alt'></i>
                 </div>
                 <div class="menu-title">Dashboard</div>
@@ -40,7 +40,18 @@
             <ul>
                 <li> <a href="component-alerts.html"><i class='bx bx-radio-circle'></i>Activities</a>
                 </li>
-                <li> <a href="component-alerts.html"><i class='bx bx-radio-circle'></i>Categories</a>
+            </ul>
+        </li>
+        <li>
+            <a class="has-arrow" href="javascript:;">
+                <div class="parent-icon"><i class='bx bx-category-alt'></i>
+                </div>
+                <div class="menu-title">Categories</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.categories') }}"><i class='bx bx-radio-circle'></i>All Categories</a>
+                </li>
+                <li> <a href="{{ route('admin.categories.create') }}"><i class='bx bx-radio-circle'></i>Add a Category</a>
                 </li>
             </ul>
         </li>

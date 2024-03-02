@@ -1565,12 +1565,13 @@ form select.error:focus {
 
 .round-pagination.pagination .page-item:first-child .page-link {
 	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px
+	border-bottom-left-radius: 30px;
 }
 
 .round-pagination.pagination .page-item:last-child .page-link {
 	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px
+	border-bottom-right-radius: 30px;
+	background-color: var(--primary-color)!important;
 }
 
 .bg-body {
