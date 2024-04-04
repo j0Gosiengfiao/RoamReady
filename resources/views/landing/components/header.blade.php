@@ -55,7 +55,7 @@ $currentRoute = Route::currentRouteName();
                     <div class="col-lg-2">
                         <div class="logo-box">
                             <a href="{{ route('landing') }}" class="logo">
-                                <h1>Logo.</h1>
+                                <img src="{{ asset('images/logo.png') }}" alt="logo" width="90%" height="90%">
                             </a>
                             <div class="user-btn-action">
 
@@ -93,7 +93,7 @@ $currentRoute = Route::currentRouteName();
                                 </ul><!-- end ul -->
                             </nav><!-- end main-menu -->
                             <div class="nav-right-button">
-                                <a href="admission.html" class="btn theme-btn d-none d-lg-inline-block"><i class="la la-user-plus mr-1"></i> Admission</a>
+                                <a href="{{ route('register') }}" class="btn theme-btn d-none d-lg-inline-block"><i class="la la-user-plus mr-1"></i> Admission</a>
                             </div><!-- end nav-right-button -->
                         </div><!-- end menu-wrapper -->
                     </div><!-- end col-lg-10 -->

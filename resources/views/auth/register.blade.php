@@ -25,16 +25,7 @@
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
 
-            <!-- Role -->
-            <div class="mt-6">
-                <x-input-label for="role" :value="__('Role')" />
-                <select id="role" name="role" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" required autocomplete="role">
-                    <option value="user" selected>User</option>
-                    <option value="htl_ownr">Hotel Owner</option>
-                </select>
-                <x-input-error :messages="$errors->get('role')" class="mt-2" />
-            </div>
-
+            
             <!-- Password -->
             <div class="mt-6">
                 <x-input-label for="password" :value="__('Password')" />

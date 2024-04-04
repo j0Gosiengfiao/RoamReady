@@ -36,7 +36,12 @@ $formattedEndTime = substr($activity->activity_end, 0, 5);
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="activity_location" class="label-text">Location</label>
-                        <input value="{{ $activity->activity_location }}" id="activity_location" name="activity_location" class="form-control form--control pl-3" type="text">
+                        <select class="form-control form--control pl-3" name="activity_location" id="activity_location">
+                            @foreach($areas as $area)
+                            <option value="{{ $area->id }}" {{ $activity->activity_location == $area->id ? 'selected' : '' }}>{{ $area->area_name }}</option>
+                            @endforeach
+                            <!-- Add more options as needed -->
+                        </select>
                         @error('activity_location')
                         <p class="text-danger">{{ $message }}</p>
                         @enderror
@@ -72,7 +77,7 @@ $formattedEndTime = substr($activity->activity_end, 0, 5);
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label for="activity_price" class="label-text">Price per head (₱)</label>
+                        <label for="activity_price" class="label-text">Price Per Head (₱)</label>
                         <input value="{{ $activity->activity_price }}" class="form-control form--control pl-3" step="0.01" type="number" name="activity_price" id="activity_price">
                         @error('activity_price')
                         <p class="text-danger">{{ $message }}</p>
@@ -134,7 +139,7 @@ $formattedEndTime = substr($activity->activity_end, 0, 5);
         </div><!-- end card-body -->
     </div><!-- end card -->
     <div class="course-submit-btn-box pb-4">
-        <button class="btn theme-btn" type="submit">Submit Course</button>
+        <button class="btn theme-btn" type="submit">Submit Activity</button>
     </div>
 </form>
 

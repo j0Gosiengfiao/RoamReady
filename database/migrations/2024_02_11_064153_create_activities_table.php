@@ -17,11 +17,12 @@ return new class extends Migration {
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->decimal('activity_price', 8, 2);
-            $table->string('activity_location');
+            $table->unsignedBigInteger('activity_location');
+            $table->foreign('activity_location')->references('id')->on('areas')->onDelete('cascade');
             $table->boolean('activity_age_limit')->default(1); // 1 for all ages, 0 for adults only
-            $table->boolean('activity_status')->default(0); // 1 for approved, 0 for pending
-            $table->time('activity_start')->format('H:i');
-            $table->time('activity_end')->format('H:i');
+            $table->boolean('activity_status')->default(1); // 1 for approved, 0 for pending
+            $table->time('activity_start');
+            $table->time('activity_end');
             $table->text('activity_desc');
             $table->unsignedInteger('activity_max');
             $table->unsignedBigInteger('user_id'); // Add user_id column

@@ -5,7 +5,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="logo-box logo--box">
-                            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                            <a href="index.html" class="logo"><img src="{{ asset('images/logo.png') }}" width="40%" height="40%" alt="logo"></a>
                             <div class="user-btn-action">
                                 <div class="off-canvas-menu-toggle main-menu-toggle icon-element icon-element-sm" data-toggle="tooltip" data-placement="top" title="Main menu">
                                     <i class="la la-bars"></i>
@@ -156,8 +156,8 @@
                                                             <img class="rounded-full img-fluid" src="{{ asset('landing/images/small-avatar-1.jpg') }}" alt="">
                                                         </a>
                                                         <div class="ml-2">
-                                                            <h4><a href="teacher-detail.html" class="text-black">Name of User</a></h4>
-                                                            <span class="d-block fs-14 lh-20">useremail@example.com</span>
+                                                            <h4><a href="teacher-detail.html" class="text-black">{{ auth()->user()->name }}</a></h4>
+                                                            <span class="d-block fs-14 lh-20">{{ auth()->user()->email }}</span>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -227,7 +227,8 @@
         <h4 class="off-canvas-menu-heading pt-20px">QNECT My Business</h4>
         <ul class="generic-list-item off-canvas-menu-list pt-1 pb-2 border-bottom border-bottom-gray">
             <li><a href="{{ route('user.qnect.activities') }}">Activities</a></li>
-            <li><a href="#">Accommodations</a></li>
+            <li><a href="{{ route('user.qnect.restaurants') }}">Restaurants</a></li>
+            <li><a href="{{ route('user.qnect.accommodations') }}">Accommodations</a></li>
         </ul>
         <ul class="generic-list-item off-canvas-menu-list pt-1 pb-2 border-bottom border-bottom-gray">
             <li><a href={{ route('user.logout') }}>Logout</a></li>

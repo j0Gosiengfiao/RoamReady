@@ -8,8 +8,10 @@
 ])
 
 <div class="dashboard-cards mb-5">
+    @if(session()->has('success'))
+            <p class="text-success">{{ session('success') }}</p>
+    @endif
     @include('user.components.activity-card', ['activities' => $activities])
 </div>
 
-<!--@include('user.components.pagination') ->
 @endsection

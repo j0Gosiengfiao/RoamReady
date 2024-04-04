@@ -14,4 +14,10 @@ class Category extends Model
         'category_img',
         // Add more attributes as needed...
     ];
+
+    public function activities()
+    {
+        return $this->hasMany(Activity::class, 'category_id');
+    }
+
 }

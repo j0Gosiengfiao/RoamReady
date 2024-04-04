@@ -379,6 +379,10 @@ body {
   font-weight: 500;
 }
 
+.explore-heading {
+  color: var(--primary-color);
+}
+
 .admin-icon {
   margin-right: 15px;
 }
@@ -8353,23 +8357,29 @@ div.datedropper .picker .pick-lg-b li {
 
 /*-=========== hero-bg ==========-*/
 .hero-bg-1 {
-
+  background-image: url('../images/quirino3.JPG');
+  background-position: center; /* This centers the background image */
+  background-size: cover; /* This ensures the background image covers the entire container */
 }
 
 .hero-bg-2 {
-
+  background-image: url("../images/quirino1.JPG");
+  background-position: center; /* This centers the background image */
+  background-size: cover; /* This ensures the background image covers the entire container */
 }
 
 .hero-bg-3 {
-
+  background-image: url("../images/quirino2.jpeg");
+  background-position: center; /* This centers the background image */
+  background-size: cover; /* This ensures the background image covers the entire container */
 }
 
 .hero-bg-4 {
-
+  background-image: url("../images/slider-img1.jpg");
 }
 
 .hero-bg-5 {
-
+  background-image: url("../images/slider-img1.jpg");
 }
 
 /*-=========== hero-slider ==========-*/

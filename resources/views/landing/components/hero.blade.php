@@ -30,7 +30,7 @@
                     </div><!-- end section-heading -->
                     <div class="hero-btn-box d-flex flex-wrap align-items-center pt-1 justify-content-center">
                         <!-- redirect to register -->
-                        <a href="admission.html" class="btn theme-btn mr-4 mb-4">Get Started <i
+                        <a href="{{ route('register') }}" class="btn theme-btn mr-4 mb-4">Get Started <i
                                 class="la la-arrow-right icon ml-1"></i></a>
                     </div><!-- end hero-btn-box -->
                 </div><!-- end hero-content -->

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ActivityRequest;
 use App\Models\Activity;
+use App\Models\Area;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,20 +15,23 @@ class ActivityController extends Controller
     public function AllActivities()
     {
         $userId = Auth::user()->id;
-        $activities = Activity::where('user_id', $userId)->latest()->get();
+        $activities = Activity::where('user_id', $userId)->latest()->paginate(3);
         return view("user.qnect.activity.index", compact("activities"));
     }
 
     public function AddActivity()
     {
         $categories = Category::orderBy('category_name')->get();
-        return view("user.qnect.activity.create", compact("categories"));
+        $areas = Area::orderBy('area_name')->get();
+        return view("user.qnect.activity.create", ['areas' => $areas, 'categories' => $categories]);
     }
 
     public function EditActivity(Activity $activity)
-    {   
+    {
+        //dd($activity);
         $categories = Category::orderBy('category_name')->get(); // Retrieve all categories
-        return view("user.qnect.activity.update", ['activity' => $activity, 'categories' => $categories]);
+        $areas = Area::orderBy('area_name')->get();
+        return view("user.qnect.activity.update", ['activity' => $activity, 'categories' => $categories, 'areas' => $areas]);
     }
 
     public function StoreActivity(ActivityRequest $request)
@@ -57,18 +61,31 @@ class ActivityController extends Controller
             "activity_max" => $validatedData['activity_max']
         ]);
 
-        return redirect()->back()->with('success','Activity registered successfully! Please wait for the administrator to approve the activity before starting operation.');
+        return redirect()->back()->with('success', 'Activity registered successfully! Please wait for the administrator to approve the activity before starting operation.');
     }
 
     public function UpdateActivity(ActivityRequest $request, Activity $activity)
     {
         $validatedData = $request->validated();
 
+        // Check if a new image is being uploaded
         if ($request->hasFile('activity_img')) {
+            // Delete old photo if it exists
+            if ($activity->activity_img) {
+                $oldImagePath = public_path($activity->activity_img);
+                if (file_exists($oldImagePath)) {
+                    unlink($oldImagePath);
+                }
+            }
+
+            // Upload new photo
             $image = $request->file('activity_img');
             $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
             Image::read($image)->resize(370, 247)->save('upload/activity/' . $name_gen);
             $save_url = 'upload/activity/' . $name_gen;
+        } else {
+            // If no new image uploaded, keep the existing image path
+            $save_url = $activity->activity_img;
         }
 
         $activity->update([
@@ -84,7 +101,7 @@ class ActivityController extends Controller
             "activity_max" => $validatedData['activity_max']
         ]);
 
-        return redirect()->back()->with('success','Activity updated successfully!');
+        return redirect()->back()->with('success', 'Activity updated successfully!');
     }
 
     public function DeleteActivity(Activity $activity)
